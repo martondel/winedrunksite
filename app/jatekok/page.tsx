@@ -123,7 +123,7 @@ export default function GamesPage() {
                           <Button>{t("games.play")}</Button>
                         </Link>
                       ) : game.id === "palinkadrunk" ? (
-                        <Link href={`/jatekok/palinkadrunk/game`}>
+                        <Link href={`/jatekok/palinkadrunk`}>
                           <Button>{t("games.play")}</Button>
                         </Link>
                       ) : (
