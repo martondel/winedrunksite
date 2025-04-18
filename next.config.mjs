@@ -12,10 +12,8 @@ const nextConfig = {
   },
   // Disable trailing slashes to avoid routing issues
   trailingSlash: false,
-  // Use static export for better compatibility with various hosting providers
-  output: 'export',
-  // Disable image optimization for static export
-  distDir: 'out',
+  // Use standalone output for better compatibility
+  output: 'standalone',
 }
 
 export default nextConfig
