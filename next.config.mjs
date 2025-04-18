@@ -7,16 +7,15 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
+    domains: ['v0.blob.com'],
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'v0.blob.com',
-      },
-    ],
   },
-  output: 'standalone',
-  trailingSlash: true,
+  // Disable trailing slashes to avoid routing issues
+  trailingSlash: false,
+  // Use static export for better compatibility with various hosting providers
+  output: 'export',
+  // Disable image optimization for static export
+  distDir: 'out',
 }
 
 export default nextConfig

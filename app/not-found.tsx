@@ -12,9 +12,14 @@ export default function NotFound() {
           <h2 className="text-3xl font-bold">Page Not Found</h2>
           <p className="text-muted-foreground">Sorry, we couldn't find the page you're looking for.</p>
         </div>
-        <Link href="/">
-          <Button>Go back home</Button>
-        </Link>
+        <div className="flex gap-4">
+          <Link href="/">
+            <Button>Go back home</Button>
+          </Link>
+          <Link href="/jatekok">
+            <Button variant="outline">View Games</Button>
+          </Link>
+        </div>
       </div>
     </div>
   )
