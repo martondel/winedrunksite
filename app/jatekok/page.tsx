@@ -57,10 +57,10 @@ export default function GamesPage() {
             <Link href="/jatekok" className="text-sm font-medium underline underline-offset-4">
               {t("nav.games")}
             </Link>
-            <Link href="/jellemzok" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="/jellemzok/" className="text-sm font-medium hover:underline underline-offset-4">
               {t("nav.features")}
             </Link>
-            <Link href="/kapcsolat" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="/kapcsolat/" className="text-sm font-medium hover:underline underline-offset-4">
               {t("nav.contact")}
             </Link>
           </nav>
@@ -119,11 +119,11 @@ export default function GamesPage() {
 
                     <div className="flex flex-wrap gap-3">
                       {game.id === "winedrunk" ? (
-                        <Link href={`/jatekok/${game.id}`}>
+                        <Link href={`/jatekok/${game.id}/`}>
                           <Button>{t("games.play")}</Button>
                         </Link>
                       ) : game.id === "palinkadrunk" ? (
-                        <Link href={`/jatekok/palinkadrunk/game`}>
+                        <Link href={`/jatekok/palinkadrunk/game/`}>
                           <Button>{t("games.play")}</Button>
                         </Link>
                       ) : (
@@ -155,7 +155,7 @@ export default function GamesPage() {
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Winedrunk. {t("footer.rights")}
             </p>
-            <Link href="/kapcsolat" className="md:ml-4">
+            <Link href="/kapcsolat/" className="md:ml-4">
               <Button variant="link" size="sm" className="h-auto p-0">
                 {t("footer.contact")}
               </Button>

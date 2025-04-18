@@ -42,13 +42,13 @@ export default function Home() {
             </span>
           </Link>
           <nav className="hidden md:flex gap-6">
-            <Link href="/jatekok" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="/jatekok/" className="text-sm font-medium hover:underline underline-offset-4">
               {t("nav.games")}
             </Link>
-            <Link href="/jellemzok" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="/jellemzok/" className="text-sm font-medium hover:underline underline-offset-4">
               {t("nav.features")}
             </Link>
-            <Link href="/kapcsolat" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="/kapcsolat/" className="text-sm font-medium hover:underline underline-offset-4">
               {t("nav.contact")}
             </Link>
           </nav>
@@ -67,13 +67,13 @@ export default function Home() {
               </h1>
               <p className="max-w-[700px] text-lg text-muted-foreground md:text-xl">{t("hero.description")}</p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href="/jatekok">
+                <Link href="/jatekok/">
                   <Button size="lg">
                     {t("hero.play")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-                <Link href="/jellemzok">
+                <Link href="/jellemzok/">
                   <Button size="lg" variant="outline">
                     {t("hero.learn")}
                   </Button>
@@ -118,7 +118,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-12 flex justify-center">
-              <Link href="/jellemzok">
+              <Link href="/jellemzok/">
                 <Button variant="outline">{t("features.how")}</Button>
               </Link>
             </div>
@@ -155,13 +155,13 @@ export default function Home() {
                     <h3 className="text-xl font-bold">{game.title}</h3>
                     <p className="mt-2 text-muted-foreground">{game.description}</p>
                     {game.id === "winedrunk" ? (
-                      <Link href={`/jatekok/${game.id}`}>
+                      <Link href={`/jatekok/${game.id}/`}>
                         <Button className="mt-4" variant="outline">
                           {t("games.play")}
                         </Button>
                       </Link>
                     ) : game.id === "palinkadrunk" ? (
-                      <Link href="/jatekok/palinkadrunk/game">
+                      <Link href="/jatekok/palinkadrunk/game/">
                         <Button className="mt-4" variant="outline">
                           {t("games.play")}
                         </Button>
@@ -176,7 +176,7 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-12 flex justify-center">
-              <Link href="/jatekok">
+              <Link href="/jatekok/">
                 <Button size="lg" variant="outline">
                   {t("games.viewAll")}
                 </Button>
@@ -208,7 +208,7 @@ export default function Home() {
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Winedrunk. {t("footer.rights")}
             </p>
-            <Link href="/kapcsolat" className="md:ml-4">
+            <Link href="/kapcsolat/" className="md:ml-4">
               <Button variant="link" size="sm" className="h-auto p-0">
                 {t("footer.contact")}
               </Button>

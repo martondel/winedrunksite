@@ -7,7 +7,7 @@ export default function PalinkadrunkRedirect() {
   const router = useRouter()
 
   useEffect(() => {
-    router.push("/jatekok/palinkadrunk/game")
+    router.push("/jatekok/palinkadrunk/game/")
   }, [router])
 
   return (

@@ -8,14 +8,11 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'v0.blob.com',
-      },
-    ],
+    domains: ['v0.blob.com'],
   },
-  // Use standalone output for better compatibility with Vercel
+  // Add trailing slash to avoid routing conflicts
+  trailingSlash: true,
+  // Ensure we're using the correct output mode
   output: 'standalone',
 }
 
