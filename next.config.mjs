@@ -7,13 +7,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ['v0.blob.com'],
     unoptimized: true,
+    domains: ['v0.blob.com'],
   },
-  // Disable trailing slashes to avoid routing issues
-  trailingSlash: false,
-  // Use standalone output for better compatibility
-  output: 'standalone',
 }
 
 export default nextConfig

@@ -139,7 +139,8 @@ const translations = {
     "games.wine.longDescription":
       "WINEDRUNK is a light-hearted, fun drinking game perfect for social gatherings. Play with our partners' wines and answer questions honestly or take a sip. Discover your friends' secrets and find out who's the most honest in the group.",
     "games.tequila.title": "TEQUILADRUNK",
-    "games.tequila.description": "If you want something stronger, choose our partners' tequilas with more serious questions",
+    "games.tequila.description":
+      "If you want something stronger, choose our partners' tequilas with more serious questions",
     "games.tequila.longDescription":
       "TEQUILADRUNK is a more intense drinking game that works with deeper questions and stronger drinks. If you want something with more kick, choose one of our partners' tequila with more serious questions. Only recommended for those ready for honest answers.",
     "games.palinka.title": "PÁLINKADRUNK",

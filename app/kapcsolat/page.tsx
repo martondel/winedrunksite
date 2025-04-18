@@ -68,8 +68,8 @@ export default function ContactPage() {
                     <p className="text-muted-foreground mb-4">{t("contact.cofounder")}</p>
                     <div className="flex items-center gap-2">
                       <Mail className="h-4 w-4" />
-                      <a href="mailto:v@winedrunkgame.com" className="text-primary hover:underline">
-                        v@winedrunkgame.com
+                      <a href="mailto:vanky@winedrunkgame.com" className="text-primary hover:underline">
+                        vanky@winedrunkgame.com
                       </a>
                     </div>
                   </div>
@@ -84,8 +84,8 @@ export default function ContactPage() {
                     <p className="text-muted-foreground mb-4">{t("contact.cofounder")}</p>
                     <div className="flex items-center gap-2">
                       <Mail className="h-4 w-4" />
-                      <a href="mailto:d@winedrunkgame.com" className="text-primary hover:underline">
-                        d@winedrunkgame.com
+                      <a href="mailto:delea@winedrunkgame.com" className="text-primary hover:underline">
+                        delea@winedrunkgame.com
                       </a>
                     </div>
                   </div>

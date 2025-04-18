@@ -161,7 +161,7 @@ export default function Home() {
                         </Button>
                       </Link>
                     ) : game.id === "palinkadrunk" ? (
-                      <Link href="/palinkadrunk">
+                      <Link href="/jatekok/palinkadrunk/game">
                         <Button className="mt-4" variant="outline">
                           {t("games.play")}
                         </Button>
