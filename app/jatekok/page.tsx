@@ -20,7 +20,7 @@ export default function GamesPage() {
       difficulty: t("games.difficulty.easy"),
       players: "min. 2",
       time: "∞",
-      image: "/images/wine.jpeg",
+      image: "/images/wine-new.webp",
     },
     {
       id: "tequiladrunk",
@@ -30,7 +30,7 @@ export default function GamesPage() {
       difficulty: t("games.difficulty.medium"),
       players: "min. 2",
       time: "∞",
-      image: "/images/tequila.webp",
+      image: "/images/tequila-new.webp",
     },
     {
       id: "palinkadrunk",
@@ -40,7 +40,7 @@ export default function GamesPage() {
       difficulty: t("games.difficulty.hard"),
       players: "min. 2",
       time: "∞",
-      image: "/images/hazibuli.jpeg",
+      image: "/images/house-new.webp",
     },
   ]
 
@@ -88,7 +88,13 @@ export default function GamesPage() {
               {games.map((game, index) => (
                 <div key={game.id} className="flex flex-col gap-8 md:flex-row">
                   <div className="aspect-video w-full md:w-1/3 rounded-lg overflow-hidden relative">
-                    <Image src={game.image || "/placeholder.svg"} alt={game.title} fill className="object-cover" />
+                    <Image
+                      src={game.image || "/placeholder.svg"}
+                      alt={game.title}
+                      fill
+                      className="object-cover"
+                      priority={true}
+                    />
                   </div>
                   <div className="flex-1 space-y-4">
                     <h2 className="text-2xl font-bold" style={{ fontFamily: "'Freckle Face', cursive" }}>
@@ -112,7 +118,17 @@ export default function GamesPage() {
                     </div>
 
                     <div className="flex flex-wrap gap-3">
-                      <Button>{t("games.play")}</Button>
+                      {game.id === "winedrunk" ? (
+                        <Link href={`/jatekok/${game.id}`}>
+                          <Button>{t("games.play")}</Button>
+                        </Link>
+                      ) : game.id === "palinkadrunk" ? (
+                        <Link href={`/jatekok/palinkadrunk/game`}>
+                          <Button>{t("games.play")}</Button>
+                        </Link>
+                      ) : (
+                        <Button disabled>{t("games.play")}</Button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -150,4 +166,3 @@ export default function GamesPage() {
     </div>
   )
 }
-

@@ -32,7 +32,7 @@ const translations = {
     "features.easy.description":
       "Az egyszerű szabályok és az intuitív felület mindenki számára elérhetővé teszi játékainkat.",
     "features.social.title": "Összehoz",
-    "features.social.description": "Mélyítsétek el a bartátságotokat a legőszintébben.",
+    "features.social.description": "Mélyítsétek el a barátságotokat a legőszintébben.",
     "features.variety.title": "Változatos",
     "features.variety.description":
       "Egy kérdésre nincs két ugyanolyan válasz, így akárhányszor használatba vehetitek bármelyik paklit.",
@@ -52,7 +52,7 @@ const translations = {
     "games.tequila.longDescription":
       "A TEQUILADRUNK egy intenzívebb ivós játék, amely mélyebb kérdésekkel és erősebb italokkal dolgozik. Ha valami ütősebbre vágysz, válaszd a partnereink tequiláit komolyabb kérdésekkel. Csak azoknak ajánljuk, akik készen állnak az őszinte válaszokra.",
     "games.palinka.title": "PÁLINKADRUNK",
-    "games.palinka.description": "Házibulin lendítenéd fel a hangulatot? Keverd a piákat az act it out kártyákkal",
+    "games.palinka.description": "Házibulin lendítenéd fel a hangulatot? Keverd a piákat az Act It Out kártyákkal",
     "games.palinka.longDescription":
       "A PÁLINKADRUNK a legjobb választás, ha igazán fel akarsz pörgetni egy házibulit. Ehhez a játékhoz nincs szükséged kódra! Keverd a különböző italokat a barátias, de kihívást jelentő act it out kártyákkal. Ez a játék garantáltan felejthetetlen estét biztosít minden résztvevő számára.",
     "games.play": "Játssz Most",
@@ -135,17 +135,17 @@ const translations = {
     "games.pageTitle": "Our Games",
     "games.pageDescription": "Discover our complete collection of entertaining drinking games",
     "games.wine.title": "WINEDRUNK",
-    "games.wine.description": "Play with BB wines and answer questions honestly",
+    "games.wine.description": "Play with our partner brands' wines and answer questions honestly",
     "games.wine.longDescription":
-      "WINEDRUNK is a light-hearted, fun drinking game perfect for social gatherings. Play with BB wines and answer questions honestly or take a sip. Discover your friends' secrets and find out who's the most honest in the group.",
+      "WINEDRUNK is a light-hearted, fun drinking game perfect for social gatherings. Play with our partners' wines and answer questions honestly or take a sip. Discover your friends' secrets and find out who's the most honest in the group.",
     "games.tequila.title": "TEQUILADRUNK",
-    "games.tequila.description": "If you want something stronger, choose Sierra Tequila with more serious questions",
+    "games.tequila.description": "If you want something stronger, choose our partners' tequilas with more serious questions",
     "games.tequila.longDescription":
-      "TEQUILADRUNK is a more intense drinking game that works with deeper questions and stronger drinks. If you want something with more kick, choose Sierra Tequila with more serious questions. Only recommended for those ready for honest answers.",
+      "TEQUILADRUNK is a more intense drinking game that works with deeper questions and stronger drinks. If you want something with more kick, choose one of our partners' tequila with more serious questions. Only recommended for those ready for honest answers.",
     "games.palinka.title": "PÁLINKADRUNK",
-    "games.palinka.description": "Want to liven up your house party? Mix drinks with friendly questions",
+    "games.palinka.description": "Want to boost up your house party? Mix drinks with our Act It Out cards",
     "games.palinka.longDescription":
-      "PÁLINKADRUNK is the best choice if you really want to energize your house party. Mix different pálinkas with friendly but challenging questions. This game guarantees an unforgettable evening for all participants.",
+      "PÁLINKADRUNK is the best choice if you really want to energize your house party. Mix different drinks with friendly but challenging Act It out cards. This game guarantees an unforgettable evening for all participants.",
     "games.play": "Play Now",
     "games.viewAll": "View All Games",
     "games.howToPlay": "How to Play",
@@ -222,4 +222,3 @@ export function useLanguage() {
   }
   return context
 }
-

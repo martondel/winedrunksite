@@ -13,19 +13,22 @@ export default function Home() {
 
   const games = [
     {
+      id: "winedrunk",
       title: t("games.wine.title"),
       description: t("games.wine.description"),
-      image: "/images/wine.jpeg",
+      image: "/images/wine-new.webp",
     },
     {
+      id: "tequiladrunk",
       title: t("games.tequila.title"),
       description: t("games.tequila.description"),
-      image: "/images/tequila.webp",
+      image: "/images/tequila-new.webp",
     },
     {
+      id: "palinkadrunk",
       title: t("games.palinka.title"),
       description: t("games.palinka.description"),
-      image: "/images/hazibuli.jpeg",
+      image: "/images/house-new.webp",
     },
   ]
 
@@ -140,14 +143,34 @@ export default function Home() {
                   className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl"
                 >
                   <div className="aspect-video w-full relative">
-                    <Image src={game.image || "/placeholder.svg"} alt={game.title} fill className="object-cover" />
+                    <Image
+                      src={game.image || "/placeholder.svg"}
+                      alt={game.title}
+                      fill
+                      className="object-cover"
+                      priority={true}
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold">{game.title}</h3>
                     <p className="mt-2 text-muted-foreground">{game.description}</p>
-                    <Button className="mt-4" variant="outline">
-                      {t("games.play")}
-                    </Button>
+                    {game.id === "winedrunk" ? (
+                      <Link href={`/jatekok/${game.id}`}>
+                        <Button className="mt-4" variant="outline">
+                          {t("games.play")}
+                        </Button>
+                      </Link>
+                    ) : game.id === "palinkadrunk" ? (
+                      <Link href="/jatekok/palinkadrunk/game">
+                        <Button className="mt-4" variant="outline">
+                          {t("games.play")}
+                        </Button>
+                      </Link>
+                    ) : (
+                      <Button className="mt-4" variant="outline" disabled>
+                        {t("games.play")}
+                      </Button>
+                    )}
                   </div>
                 </div>
               ))}
@@ -196,4 +219,3 @@ export default function Home() {
     </div>
   )
 }
-
